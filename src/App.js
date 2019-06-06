@@ -2,28 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
-class App extends Component {
-  state = {
-    persons: [
-      { name: "David", age: 45 },
-      { name: "Quang", age: 27 },
-      { name: "Robert", age: 29 }
-    ]
-  };
+const app = props => {
 
-  switchNameHandler = ()=>{
-    // console.log("Was clicked")
-    this.setState({
-      persons: [
-        { name: "David", age: 35 },
-        { name: "Quang", age: 27 },
-        { name: "Robert", age: 30 }
-      ]
-    });
-  }
-
-
-  render() {
     return (
       <div className="App">
         <h1>Hi I am a react app</h1>
@@ -42,7 +22,27 @@ class App extends Component {
         />
       </div>
     );
-  }
+  
 }
 
 export default App;
+
+
+  // state = {
+  //   persons: [
+  //     { name: "David", age: 45 },
+  //     { name: "Quang", age: 27 },
+  //     { name: "Robert", age: 29 }
+  //   ]
+  // };
+
+  // switchNameHandler = () => {
+  //   // console.log("Was clicked")
+  //   this.setState({
+  //     persons: [
+  //       { name: "David", age: 35 },
+  //       { name: "Quang", age: 27 },
+  //       { name: "Robert", age: 30 }
+  //     ]
+  //   });
+  // };
