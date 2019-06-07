@@ -73,10 +73,10 @@ class App extends Component {
 
     let classes =[]
     if (this.state.persons.length <=2){
-      classes.push('red')
+      classes.push('red') //classes = ['red']
     }
     if(this.state.persons.length <= 1){
-      classes.push('bold')
+      classes.push('bold') //classes = ['red','bold']
     }
     
     return (
