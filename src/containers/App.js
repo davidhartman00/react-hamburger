@@ -32,7 +32,7 @@ class App extends Component {
     console.log('[App.js] componentDidMount')
   }
 
-  shouldComponentUpdate(){
+  shouldComponentUpdate(nextProps,NextState){
     console.log('[App.js] shouldComponentUpdate')
     return true
   }
