@@ -62,6 +62,7 @@ class App extends Component {
         return {persons,
         changeCounter: prevState.changeCounter +1}
       });
+
     
   }
 
