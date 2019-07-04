@@ -1,11 +1,11 @@
 import React from "react";
 import Aux from "../../hoc/Aux";
 
-const layout = () => {
+const layout = props => (
   <Aux>
     <div> Toolbar, SideDrawer, Backdrop</div>
     <main>{props.childern}</main>
-  </Aux>;
-};
+  </Aux>
+);
 
-export default App;
+export default layout;
