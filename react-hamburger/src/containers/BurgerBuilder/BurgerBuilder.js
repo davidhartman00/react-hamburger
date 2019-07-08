@@ -26,7 +26,14 @@ class BurgerBuilder extends Component {
         totalPrice: 4
     }
 
+addIngredientHandler = type =>{
 
+
+}
+
+removeIngredientHandler = type =>{
+
+}
 
 
     render() {
