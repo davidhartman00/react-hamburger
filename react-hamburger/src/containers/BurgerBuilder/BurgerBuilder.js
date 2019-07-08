@@ -40,11 +40,10 @@ addIngredientHandler = type =>{
 
     this.setState({ingredients: updatedIngredients, totalPrice: newPrice})
 
-
-
 }
 
 removeIngredientHandler = type =>{
+    
 
 }
 
