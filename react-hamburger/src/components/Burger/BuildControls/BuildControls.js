@@ -9,7 +9,7 @@ const controls = [
   { label: "Cheese", type: "cheese" },
   { label: "Meat", type: "meat" }
 ];
-const buildControls = props => (
+const buildControls = (props) => (
   <div className={style.BuildControls}>
     {controls.map(ctrl => (
       <BuildControl key={ctrl.label} label={ctrl.label} />
