@@ -60,14 +60,14 @@ class BurgerBuilder extends Component {
   };
 
   render() {
-    const isDisabled = {
+    const disabledInfo = {
       ...this.state.ingredients
     }
 
-    for (var key in isDisabled) {
-      isDisabled[key] = isDisabled[key] <= 0 
+    for (let key in disabledInfo) {
+      disabledInfo[key] = disabledInfo[key] <= 0 
     }
-    console.log(isDisabled, "isDisabled");
+    console.log(disabledInfo, "disabledInfo");
     
     return (
       <Aux>
@@ -75,7 +75,7 @@ class BurgerBuilder extends Component {
         <BuilderControls
         ingredientAdded = {this.addIngredientHandler}
         ingredientRemoved = {this.removeIngredientHandler}
-        isDisabled = {isDisabled}/>
+        disabled = {disabledInfo}/>
       </Aux>
     );
   }
