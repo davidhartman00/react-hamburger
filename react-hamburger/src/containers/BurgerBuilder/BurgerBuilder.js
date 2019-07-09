@@ -67,6 +67,8 @@ class BurgerBuilder extends Component {
     for (var key in isDisabled) {
       isDisabled[key] = isDisabled[key] <= 0 
     }
+    console.log(isDisabled, "isDisabled");
+    
     return (
       <Aux>
         <Burger ingredients={this.state.ingredients} />
