@@ -63,9 +63,10 @@ class BurgerBuilder extends Component {
     const isDisabled = {
       ...this.state.ingredients
     }
-    isDisabled.foreach(el => {
-      isDisabled[el] = isDisabled[el] <= 0 
-    });
+    console.log(isDisabled, "isDisabled")
+    // isDisabled.foreach(el => {
+    //   isDisabled[el] = isDisabled[el] <= 0 
+    // });
     return (
       <Aux>
         <Burger ingredients={this.state.ingredients} />
