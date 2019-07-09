@@ -60,7 +60,9 @@ class BurgerBuilder extends Component {
   };
 
   render() {
-
+    const isDisabled = {
+      ...this.state.ingredients
+    }
     return (
       <Aux>
         <Burger ingredients={this.state.ingredients} />
