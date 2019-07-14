@@ -1,5 +1,7 @@
 import React from "react";
 
-const modal = props => <div>{props.children}</div>;
+import style from "./Modal.css"
+
+const modal = props => <div className={style.Modal}>{props.children}</div>;
 
 export default modal;
