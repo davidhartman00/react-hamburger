@@ -1,9 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import Aux from "../../../hoc/Aux"
+import Aux from "../../../hoc/Aux";
 
-const orderSummary = (props) => {
+const orderSummary = props => {
+    const ingredientsSummary = props.ingredients
+  return (
+    <Aux>
+      <h3>Your Order</h3>
+      <p>A delicision burger with th following ingredients:</p>
+      <ul>
 
-}
+      </ul>
+    </Aux>
+  );
+};
 
 export default orderSummary;
