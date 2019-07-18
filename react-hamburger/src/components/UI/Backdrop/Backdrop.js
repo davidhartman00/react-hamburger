@@ -1,7 +1,6 @@
 import React from 'react'
 
-const  Backdrop = props => (
-
-)
-
+class Backdrop extends React.Component (props){
+    
+}
 export default Backdrop
