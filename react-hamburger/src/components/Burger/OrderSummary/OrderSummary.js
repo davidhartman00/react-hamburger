@@ -7,17 +7,17 @@ const orderSummary = props => {
       .map(igKey =>{
         return (
           <li>
-            <span>{igKey}</span>:{props.ingredients[igKey]}
-          </li>
-        );
+            <span style={{textTransform: 'capitalize'}}>{igKey}</span>:{props.ingredients[igKey]}
+          </li>)
       })
   return (
     <Aux>
       <h3>Your Order</h3>
       <p>A delicision burger with th following ingredients:</p>
       <ul>
-
+        {ingredientsSummary}
       </ul>
+      <p>Continue to checkout</p>
     </Aux>
   );
 };
