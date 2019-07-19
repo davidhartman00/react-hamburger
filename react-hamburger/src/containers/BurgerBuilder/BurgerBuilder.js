@@ -26,7 +26,8 @@ class BurgerBuilder extends Component {
       meat: 0
     },
     totalPrice: 4.5,
-    purchasable: false
+    purchasable: false,
+    purchaseing: false
   };
 
   updatePurchaseState(ingredients) {
@@ -56,6 +57,9 @@ class BurgerBuilder extends Component {
     this.updatePurchaseState(updatedIngredients);
   };
 
+  purchaseHandler = ()=>{
+    this.setState({purchaseing: true})
+  }
   removeIngredientHandler = type => {
     const oldCount = this.state.ingredients[type];
     if (oldCount <= 0) {
