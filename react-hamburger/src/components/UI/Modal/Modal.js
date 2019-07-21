@@ -4,8 +4,7 @@ import style from "./Modal.module.css";
 import Aux from '../../../hoc/Aux'
 
 const modal = props =>(
-    <Aux>
-        <Backdrop show={props.show}></Backdrop>
+    <Aux></Aux>
         <div className={style.Modal}
         style={{
             transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
@@ -13,6 +12,6 @@ const modal = props =>(
         }}>
             {props.children}
         </div>
-    );
 </Aux>
+    );
 export default modal;
