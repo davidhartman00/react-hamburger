@@ -66,7 +66,7 @@ class BurgerBuilder extends Component {
   }
 
   purchaseContinueHandler = () => {
-
+    alert("Great")
   }
 
   removeIngredientHandler = type => {
@@ -105,8 +105,8 @@ class BurgerBuilder extends Component {
         >
           <OrderSummary 
               ingredients={this.state.ingredients}
-              purchaseCancalled ={this.purchaseCancelHandler}
-              purchaseContinued= {this.purchaseContinueHandler}/>
+              purchaseCancelled = {this.purchaseCancelHandler}
+              purchaseContinued = {this.purchaseContinueHandler}/>
         </Modal>
         <Burger ingredients={this.state.ingredients} />
         <BuilderControls
