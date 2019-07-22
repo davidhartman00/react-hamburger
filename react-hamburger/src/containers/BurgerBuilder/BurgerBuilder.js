@@ -62,7 +62,7 @@ class BurgerBuilder extends Component {
   };
 
   purchaseCancelHandler = () =>{
-    this.setState({pruchasing: false})
+    this.setState({purchasing: false})
   }
   removeIngredientHandler = type => {
     const oldCount = this.state.ingredients[type];
