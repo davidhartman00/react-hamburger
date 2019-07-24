@@ -1,7 +1,9 @@
 import React from "react";
 
+import style from './NavigationItem.module.css'
+
 const navigationItem = props => (
-  <li>
+  <li className={style.NavigationItem}>
     <a href="/">A Link</a>
   </li>
 );
