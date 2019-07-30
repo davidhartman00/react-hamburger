@@ -2,7 +2,7 @@ import React from 'react';
 
 import Logo from '../../Logo/Logo'
 import NavigationItems from '../NavigationItems/NavigationItems'
-import style from './SideDrawer.css'
+import style from './SideDrawer.module.css'
 
 const sideDrawer = props => {
 // .. conditionsally do some css here.
