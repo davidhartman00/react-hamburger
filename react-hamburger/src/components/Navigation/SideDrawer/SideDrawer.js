@@ -7,8 +7,7 @@ import Backdrop from "../../UI/Backdrop/Backdrop";
 import Aux from "../../../hoc/Aux";
 
 const sideDrawer = props => {
-  // .. conditionsally do some css here.
-
+    const attachedClasses = [classes.SideDrawer, classes.Close]
   return (
     <Aux>
       <Backdrop show/>
