@@ -1,20 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import Logo from '../../Logo/Logo'
-import NavigationItems from '../NavigationItems/NavigationItems'
-import style from './SideDrawer.module.css'
+import Logo from "../../Logo/Logo";
+import NavigationItems from "../NavigationItems/NavigationItems";
+import style from "./SideDrawer.module.css";
 
 const sideDrawer = props => {
-// .. conditionsally do some css here.
+  // .. conditionsally do some css here.
 
-    return(
-        <div className={style.SideDrawer}>
-            <Logo height="11%" />
-            <nav>
-                <NavigationItems />
-            </nav>
-        </div>
-    )
-}
+  return (
+    <div className={style.SideDrawer}>
+      <div>
+        <Logo  />
+      </div>
+      <nav>
+        <NavigationItems />
+      </nav>
+    </div>
+  );
+};
 
 export default sideDrawer;
