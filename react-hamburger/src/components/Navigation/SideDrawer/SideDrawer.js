@@ -9,8 +9,8 @@ const sideDrawer = props => {
 
   return (
     <div className={style.SideDrawer}>
-      <div>
-        <Logo  />
+      <div className={style.Logo}>
+        <Logo />
       </div>
       <nav>
         <NavigationItems />
