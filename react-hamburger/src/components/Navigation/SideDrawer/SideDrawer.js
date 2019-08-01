@@ -12,7 +12,7 @@ const sideDrawer = props => {
       <div className={style.Logo}>
         <Logo />
       </div>
-      <nav className={style.DesktopOnly}>
+      <nav>
         <NavigationItems />
       </nav>
     </div>
