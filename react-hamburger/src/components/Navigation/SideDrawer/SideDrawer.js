@@ -14,7 +14,7 @@ if (props.open){
 
   return (
     <Aux>
-      <Backdrop show/>
+      <Backdrop show={props.open} clicked={props.closed} />
       <div className={attachedClasses.join(" ")}>
         <div className={style.Logo}>
           <Logo />

@@ -17,7 +17,7 @@ class Layout extends Component {
     return (
       <Aux>
         <Toolbar />
-        <SideDrawer closed={this.sideDrawerClosedHandler} />
+        <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler} />
         <main className={style.Content}>{this.props.children}</main>
       </Aux>
     );
