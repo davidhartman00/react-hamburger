@@ -7,10 +7,10 @@ import Backdrop from "../../UI/Backdrop/Backdrop";
 import Aux from "../../../hoc/Aux";
 
 const sideDrawer = props => {
-    let attachedClasses = [style.SideDrawer, style.Close];
-if (props.open){
-    attachedClasses = [style.SideDrawer, style.Open]
-}
+  let attachedClasses = [style.SideDrawer, style.Close];
+  if (props.open) {
+    attachedClasses = [style.SideDrawer, style.Open];
+  }
 
   return (
     <Aux>
